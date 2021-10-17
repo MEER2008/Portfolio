@@ -1,4 +1,8 @@
-
+.rangerlogo_56_99 {
+	position:absolute;
+	left: 80px;
+	top: 0px;
+}
 .blog_22_40 { 
 	background-color:rgba(0, 0, 0, 1);
 	width:1440px;
@@ -59,16 +63,9 @@
 	height:604px;
 	position:absolute;
 	left:139px;
-	top:289px;
+	top: 320px;
 	font-family:Saira Stencil One;
 	text-align:left;
 	font-size:24px;
 	letter-spacing:0;
-}
-.rangerlogo_56_99{
-	width: 56px;
-	height: 56px;
-	position: relative;
-	left: 150px;
-	top: 42px;
 }
