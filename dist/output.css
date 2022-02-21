@@ -468,147 +468,157 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.mr-64 {
-  margin-right: 16rem;
+.fixed {
+  position: fixed;
 }
 
-.ml-52 {
-  margin-left: 13rem;
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
 }
 
-.mr-52 {
-  margin-right: 13rem;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.mr-72 {
-  margin-right: 18rem;
-}
-
-.mr-96 {
-  margin-right: 24rem;
+.bottom-96 {
+  bottom: 24rem;
 }
 
 .flex {
   display: flex;
 }
 
-.w-36 {
-  width: 9rem;
+.h-7 {
+  height: 1.75rem;
 }
 
-.w-60 {
-  width: 15rem;
+.h-screen {
+  height: 100vh;
 }
 
-.w-96 {
-  width: 24rem;
+.h-auto {
+  height: auto;
 }
 
-.w-44 {
-  width: 11rem;
+.h-11 {
+  height: 2.75rem;
 }
 
-.justify-end {
-  justify-content: flex-end;
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
-.gap-x-11 {
-  -moz-column-gap: 2.75rem;
-       column-gap: 2.75rem;
+.gap-x-7 {
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
 }
 
-.bg-black {
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-x-8 {
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+
+.bg-gray-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.px-96 {
-  padding-left: 24rem;
-  padding-right: 24rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.indent-6 {
-  text-indent: 1.5rem;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .text-white {
