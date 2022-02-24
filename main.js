@@ -10,5 +10,6 @@ aboutbtn.addEventListener("click", function() {
 function closeAbout() {
     About.style.display = "none";
     topbar.style.display = "block";
+    window.location.reload();
 }
 
