@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rangerdevv's Portfolio</title>
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="./controller.css">
 </head>
-<body class="" style="background-image: url(./Images/Bgimg.jpg);">
-        <div class=" w-screen h-7 bg-gray-700 flex flex-row gap-5 text-white px-4">
+<body class=" bg-gradient-to-tr from-blue-900 to-blue-800">
+        <div class=" w-screen h-7 bg-gray-700 flex flex-row gap-5 text-white px-4" id="topbar">
             <p class=" font-bold select-none">X</p>
             <p class=" select-none">View</p>
             <p class=" select-none">Window</p>
@@ -16,11 +17,21 @@
         </div>
         <div class=" flex justify-center fixed inset-x-0 bottom-0">
             <div class=" bg-slate-400 rounded-2xl h-12 w-72 flex justify-center py-1 px-4 gap-x-7">
-                <div class=" w-10 h-10 bg-slate-500"><img src="./Images/About.svg"></div>
-                <div class=" w-10 h-10 bg-slate-500"><img src="./Images/Projects.svg"></div>
-                <div class=" w-10 h-10 bg-slate-500"><img src="./Images/Skills.svg"></div>
-                <div class=" w-10 h-10 bg-slate-500"><img src="./Images/Contacts.svg"></div>
+                <button id="aboutbtn"><div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/About.svg"></div></button>
+                <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Projects.svg"></div>
+                <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Skills.svg"></div>
+                <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Contacts.svg"></div>
             </div>
         </div>
+        <div id="AboutWindow" class=" bg-white">
+            <div class=" w-screen h-screen bg-white">
+                <div class=" px-3 py-3 fixed"><button onclick="closeAbout()"><div class=" bg-red-500 w-7 h-7 rounded-2xl"></div></div></button>
+                <div class=" flex justify-center py-4 bg-white">
+                    <div class=" bg-slate-200 w-72 h-7 text-center rounded-md">Rangerdevv.github.io
+                    </div>
+                </div>
+                </div>
+        </div>
+        <script src="./main.js"></script>
 </body>
 </html>
