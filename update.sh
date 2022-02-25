@@ -2,6 +2,6 @@
 
 echo "Updating..."
 git add .
-git commit -m "Finished the About window"
+git commit -m "Bug fix"
 git push
 echo "Done!"

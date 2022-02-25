@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./controller.css">
 </head>
 <body class=" bg-blue-800" id="background">
+    <div class=" hidden md:block">
         <div class=" w-screen h-7 bg-gray-700 flex flex-row gap-5 text-white px-4" id="topbar">
             <p class=" font-bold select-none">X</p>
             <p class=" select-none">View</p>
@@ -15,6 +16,8 @@
             <p class=" select-none">Help</p>
             <p class=" select-none">About</p>
         </div>
+    </div>
+    <div class=" hidden md:block">
         <div class=" flex justify-center fixed inset-x-0 bottom-0">
             <div class=" bg-slate-400 rounded-2xl h-12 w-72 flex justify-center py-1 px-4 gap-x-7">
                 <button id="aboutbtn"><div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/About.svg"></div></button>
@@ -23,6 +26,7 @@
                 <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Contacts.svg"></div>
             </div>
         </div>
+    </div>
         <div id="AboutWindow" class=" bg-slate-900 block">
             <div class=" w-screen h-screen bg-slate-900">
                 <div class=" px-3 py-3 fixed"><button onclick="closebtn()"><div class=" bg-red-500 w-6 h-6 rounded-2xl"></div></div></button>
@@ -57,7 +61,6 @@
                     </div>
                 </div>
                 </div>
-
 </body>
        <script src="./main.js"></script>
 </html>
