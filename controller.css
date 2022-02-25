@@ -2,3 +2,13 @@
 #AboutWindow {
     display: none;
 }
+
+#introtext {
+    width: 50%;
+}
+
+@media (min-width: 640px) {
+    #introtext {
+        width: 45%;
+    }
+}
