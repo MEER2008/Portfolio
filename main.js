@@ -12,6 +12,7 @@ function OpenAbout() {
     topbar.style.display = "none";
     projects.style.display = "none";
     skills.style.display = "none";
+    Contacts.style.display = "none";
     window. scrollTo(0,0);
 }
 
@@ -24,6 +25,7 @@ function OpenProjects() {
     topbar.style.display = "none";
     About.style.display = "none";
     skills.style.display = "none";
+    Contacts.style.display = "none";
     window. scrollTo(0,0);
 }
 
@@ -32,6 +34,7 @@ function openSkills() {
     topbar.style.display = "none";
     About.style.display = "none";
     projects.style.display = "none";
+    Contacts.style.display = "none";
     window. scrollTo(0,0);
 }
 
