@@ -4,6 +4,7 @@ const aboutbtn = document.getElementById("aboutbtn");
 const background = document.getElementById("background");
 const projects = document.getElementById("ProjectWindow");
 const skills = document.getElementById("SkillsWindow");
+const Contacts = document.getElementById("ContactsWindow");
 
 
 function OpenAbout() {
@@ -34,3 +35,11 @@ function openSkills() {
     window. scrollTo(0,0);
 }
 
+function openContacts() {
+    Contacts.style.display = "block";
+    topbar.style.display = "none";
+    About.style.display = "none";
+    projects.style.display = "none";
+    skills.style.display = "none";
+    window. scrollTo(0,0);
+}
