@@ -20,8 +20,8 @@
     <div class=" hidden md:block">
         <div class=" flex justify-center fixed inset-x-0 bottom-0 ">
             <div class=" bg-slate-400 rounded-2xl h-12 w-72 flex justify-center py-1 px-4 gap-x-7">
-                <button id="aboutbtn"><div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/About.svg"></div></button>
-                <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Projects.svg"></div>
+                <button onclick="OpenAbout()"><div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/About.svg"></div></button>
+                <button onclick="OpenProjects()"><div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Projects.svg"></div></button>
                 <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Skills.svg"></div>
                 <div class=" w-10 h-10 bg-slate-500 rounded-md"><img src="./Images/Contacts.svg"></div>
             </div>
@@ -41,7 +41,7 @@
                     <div class=" text-left px-36 py-24">
                         <div class=" text-white">
                             <p class=" text-transparent bg-clip-text bg-gradient-to-br sm:bg-current from-cyan-400 to-blue-800 text-5xl font-extrabold">About Me:</p>
-                            <p class=" text-2xl py-12">First things first, I am Ranger, I am a 14 year old who is very passionate about programming. I am currently living in Pittsburgh, PA. I like to do many things including playing the piano, reading books, programming, and more! I am also a huge fan of the Netflix show "A series of Unfortunate Events" and also a big linux fan (I use KDE  btw). I started to do programming at the age of 11, I first got introduced to it when I joined a coding club in my school because all of my other friends were joining in it too. Slowly I started to get interested in programming and started to learn programming from the website Codecademy. As of today I have learned almost to 8 programming languages and have managed to master 4 of those. I have made many websites using HTML, CSS, and JS.</p>
+                            <p class=" text-2xl py-12">First things first, I am Ranger, I am a 14 year old who is very passionate about programming. I am currently living in Pittsburgh, PA. I like to do many things including playing the piano, reading books, programming, and more! I am also a huge fan of the Netflix show "A series of Unfortunate Events" I am also a Linux and free software enthusiast. I started to do programming at the age of 11, I first got introduced to it when I joined a coding club in my school because all of my other friends were joining in it too. Slowly I started to get interested in programming and started to learn programming from the website Codecademy. As of today I have learned almost to 8 programming languages and have managed to master 4 of those. I have made many websites using HTML, CSS, and JS.</p>
                             <p class=" text-transparent bg-clip-text bg-gradient-to-br sm:bg-current from-cyan-400 to-blue-800 text-5xl font-extrabold">My motivation:</p>
                             <p class=" text-2xl py-12">My motivation to keep me working is that one day I want to make something that helps the community. My greatest inspiration for this is Linus Torvalds, He is the founder of Linux. As of today, Linux is the ideal OS for most programmers because of how lightweight it is and the ease of use. Linux has set an example of what a good OS should be like. Another person is Steve Jobs, he the person I always look up to. The hardships he went though makes me appreciate what I have and has helped me changed how I think of people and things.</p>
                         </div>
@@ -67,6 +67,74 @@
                     </div>
                     </div>
                 </div>
+        </div>
+
+        <div id="ProjectWindow" class=" bg-slate-900 block">
+            <div class=" w-screen h-screen bg-slate-900">
+                <div class=" px-3 py-3 fixed"><button onclick="closebtn()"><div class=" bg-red-500 w-6 h-6 rounded-2xl"></div></div></button>
+                <div class=" flex justify-center py-4 bg-slate-900">
+                    <div class=" bg-slate-300 w-72 h-7 text-center rounded-md">Rangerdevv.github.io
+                </div>
+                </div>
+                <div>
+                    <div class=" flex justify-center py-16">
+                        <p class=" h-16 text-transparent bg-clip-text bg-gradient-to-br sm:bg-current from-cyan-400 to-blue-800 text-5xl font-extrabold">My Projects</p>
+                    </div>
+                    <!---Projects-->
+                    <div class=" flex justify-center py-12">
+                        <!-- Project List -->
+                        <div class=" text-white">
+                            <div class=" flex gap-y-24 flex-col">
+                                <div class=" md:flex gap-x-11">
+                                    <div class=" flex gap-y-4 flex-col">
+                                        <a href="https://rangerdevv.github.io/CursorBridge-Tailwindcss/" class=" text-white text-center text-2xl">CursorBridge</a>
+                                        <div class=" flex
+                                        justify-center md:justify-start"><div class=" w-44 h-44 bg-slate-400"></div></div>
+                                        <a href="https://github.com/RangerDevv/CursorBridge-Tailwindcss" class=" text-white text-center text-2xl">Github</a>
+                                    </div> 
+                                    <div class=" px-52">
+                                        <p class=" text-center w-96 text-lg">Cursor Bridge is essentially a website where one can find template for Buttons, Search Bars, and icons for their website. The templates are manually created in figma and turned into code once the prototyping is done. The goal of CursorBridge is to offer people who are not good at designing components beautiful component templates. </p>
+                                    </div>
+                                </div>
+                                <div class=" md:flex gap-x-11">
+                                    <div class=" flex gap-y-4 flex-col">
+                                        <a href="" class=" text-white text-center text-2xl">Arduino OS</a>
+                                        <div class=" flex
+                                        justify-center md:justify-start"><div class=" w-44 h-44 bg-slate-400"></div></div>
+                                        <a href="https://github.com/RangerDevv/ArduinoOS" class=" text-white text-center text-2xl">Github</a>
+                                    </div> 
+                                    <div class=" px-52">
+                                        <p class=" text-center w-96 text-lg">Originally written in C++, the OS was meant for the arduino. Since I was not able to find any projects that had an OS for arduino, I decided to create my own one. I started to write this OS in C++ but later realized that I should convert the OS for HMI displays (such as nextion displays) because it is overall easier to do it. It also gave me more graphical flexibility than C++. This OS can be run if you have a Nextion Display </p>
+                                    </div>
+                                </div>
+                                <div class=" md:flex gap-x-11">
+                                    <div class=" flex gap-y-4 flex-col">
+                                        <a href="https://rangerdevv.github.io/guess-my-no/" class=" text-white text-center text-2xl">guess-my-no</a>
+                                        <div class=" flex
+                                        justify-center md:justify-start"><div class=" w-44 h-44 bg-slate-400"></div></div>
+                                        <a href="https://github.com/RangerDevv/guess-my-no" class=" text-white text-center text-2xl">Github</a>
+                                    </div> 
+                                    <div class=" px-52">
+                                        <p class=" text-center w-96 text-lg">This is a very simple guess my number is a very simple JS application and was one of my first ever JS website. It was made with the help of a Udemy instructor Jonas Schmedtmann. It is a very simple JS application.</p>
+                                    </div>
+                                </div>
+                                <div class=" md:flex gap-x-11">
+                                    <div class=" flex gap-y-4 flex-col">
+                                        <a href="https://rangerdevv.github.io/" class=" text-white text-center text-2xl">Portfolio</a>
+                                        <div class=" flex
+                                        justify-center md:justify-start"><div class=" w-44 h-44 bg-slate-400"></div></div>
+                                        <a href="https://github.com/RangerDevv/rangerdevv.github.io" class=" text-white text-center text-2xl">Github</a>
+                                    </div> 
+                                    <div class=" px-52">
+                                        <p class=" text-center w-96 text-lg">This is the website you are on right now.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+
 </body>
        <script src="./main.js"></script>
 </html>

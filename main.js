@@ -2,15 +2,22 @@ const About = document.getElementById("AboutWindow");
 const topbar = document.getElementById("topbar");
 const aboutbtn = document.getElementById("aboutbtn");
 const background = document.getElementById("background");
+const projects = document.getElementById("ProjectWindow");
 
-aboutbtn.addEventListener("click", function() {
+
+function OpenAbout() {
     About.style.display = "block";
     topbar.style.display = "none";
-    background.style.backgroundColor = "#0f172a";
-
-    });
+    projects.style.display = "none";
+}
 
 function closebtn() {
     window.location.reload();
+}
+
+function OpenProjects() {
+    projects.style.display = "block";
+    topbar.style.display = "none";
+    About.style.display = "none";
 }
 
