@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "Projects page done (kinda)"
+git commit -m "Skills page done"
 git push
 echo "Done!"
