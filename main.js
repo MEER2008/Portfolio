@@ -9,6 +9,7 @@ function OpenAbout() {
     About.style.display = "block";
     topbar.style.display = "none";
     projects.style.display = "none";
+    window. scrollTo(0,0);
 }
 
 function closebtn() {
@@ -19,5 +20,6 @@ function OpenProjects() {
     projects.style.display = "block";
     topbar.style.display = "none";
     About.style.display = "none";
+    window. scrollTo(0,0);
 }
 
