@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "Fixed Sidescroll"
+git commit -m "changes"
 git push
 echo "Done!"
