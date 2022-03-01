@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="5" fill="black"/>
+<rect x="7.0502" y="4.65005" width="17.9" height="22.7" rx="2.15" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="12.6498" y="3.04995" width="6.7" height="3.5" rx="1.75" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="6.7" height="1.1" rx="0.55" transform="matrix(1 0 0 -1 16 10.7)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="3.5" height="2.7" rx="1.35" transform="matrix(1 0 0 -1 10.3999 11.5)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="3.5" height="2.7" rx="1.35" transform="matrix(1 0 0 -1 10.3999 14.7)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="3.5" height="2.7" rx="1.35" transform="matrix(1 0 0 -1 10.3999 17.9)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="3.5" height="2.7" rx="1.35" transform="matrix(1 0 0 -1 10.3999 21.1)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="3.5" height="2.7" rx="1.35" transform="matrix(1 0 0 -1 10.3999 24.3)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="8.3" height="1.1" rx="0.55" transform="matrix(1 0 0 -1 16 13.9)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="5.9" height="1.1" rx="0.55" transform="matrix(1 0 0 -1 16 17.1)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="7.5" height="1.1" rx="0.55" transform="matrix(1 0 0 -1 16 20.3)" fill="black" stroke="white" stroke-width="0.3"/>
+<rect x="-0.15" y="0.15" width="6.7" height="1.1" rx="0.55" transform="matrix(1 0 0 -1 16 23.5)" fill="black" stroke="white" stroke-width="0.3"/>
+</svg>
