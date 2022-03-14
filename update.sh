@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "fixed the image bug"
+git commit -m "very very very very very very very tiny lol"
 git push
 echo "Done!"
