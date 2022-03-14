@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "very very very very very very very tiny lol"
+git commit -m "2 new skills!"
 git push
 echo "Done!"
