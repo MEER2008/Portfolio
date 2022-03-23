@@ -7,7 +7,6 @@ const skills = document.getElementById("SkillsWindow");
 const Contacts = document.getElementById("ContactsWindow");
 const shortcuts = document.getElementById("shortcuts");
 
-
 function OpenAbout() {
     About.style.display = "block";
     topbar.style.display = "none";
@@ -51,3 +50,4 @@ function openContacts() {
     shortcuts.style.display = "none";
     window. scrollTo(0,0);
 }
+
