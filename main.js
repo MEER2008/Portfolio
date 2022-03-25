@@ -6,6 +6,7 @@ const projects = document.getElementById("ProjectWindow");
 const skills = document.getElementById("SkillsWindow");
 const Contacts = document.getElementById("ContactsWindow");
 const shortcuts = document.getElementById("shortcuts");
+const Quoteboard = document.getElementById("Quoteboard");
 
 function OpenAbout() {
     About.style.display = "block";
@@ -14,6 +15,7 @@ function OpenAbout() {
     skills.style.display = "none";
     Contacts.style.display = "none";
     shortcuts.style.display = "none";
+    Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
 
@@ -28,6 +30,7 @@ function OpenProjects() {
     skills.style.display = "none";
     Contacts.style.display = "none";
     shortcuts.style.display = "none";
+    Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
 
@@ -38,6 +41,7 @@ function openSkills() {
     projects.style.display = "none";
     Contacts.style.display = "none";
     shortcuts.style.display = "none";
+    Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
 
@@ -48,6 +52,7 @@ function openContacts() {
     projects.style.display = "none";
     skills.style.display = "none";
     shortcuts.style.display = "none";
+    Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
 

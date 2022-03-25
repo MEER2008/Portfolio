@@ -11,6 +11,12 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 600px) {
+    #Quoteboard{
+        display: none;
+    }
+}
+
 #introtext {
     width: 50%;
 }

@@ -631,6 +631,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-y-20 {
   row-gap: 5rem;
 }
@@ -822,6 +826,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 8rem;
 }
 
+.pr-36 {
+  padding-right: 9rem;
+}
+
+.pl-36 {
+  padding-left: 9rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -883,11 +895,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-cyan-400 {
   --tw-text-opacity: 1;
   color: rgb(34 211 238 / var(--tw-text-opacity));
-}
-
-.line-through {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
 }
 
 .outline {
