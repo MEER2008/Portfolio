@@ -19,5 +19,8 @@
   "homepage": "https://github.com/RangerDevv/rangerdevv.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "daisyui": "^2.18.0"
   }
 }
