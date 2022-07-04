@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "Revamped the about steps section"
+git commit -m "Bug Fix"
 git push
 echo "Done!"
