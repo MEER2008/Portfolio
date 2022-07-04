@@ -17,27 +17,7 @@
             <p class=" select-none">About</p>
         </div>
     </div>
-    <div class=" flex justify-center md:hidden" id="shortcuts">
-        <div class=" py-14 flex flex-col gap-y-20 md:flex-row justify-center gap-x-40">
-            <div class=" flex flex-col gap-y-14 justify-center">
-                <div class=" w-56 h-auto bg-transparent outline outline-4 outline-white flex justify-center">
-                    <div class=" grid grid-cols-3 gap-x-7 gap-y-16 my-10">
-                        <a href="https://join.slack.com/t/programmerdis-lbi8894/shared_invite/zt-14k2k78lt-sn6JlIQPFLmWW~XTDVCnnw"><div class=" w-8 h-8"><img src="./Images/TinySlack.svg" class=" scale-150"></div></a>
-                        <a href="https://discord.gg/5YytzWURHr"><div class=" w-8 h-8"><img src="./Images/TinyDiscord.svg" class=" scale-150"></div></a>
-                        <a href="https://www.fiverr.com/rangerdev/design-and-code-a-landing-page-or-a-portfolio-and-anything"><div class=" w-8 h-8"><img src="./Images/TinyFiverr.svg" class=" scale-150"></div></a>
-                        <button class=" w-8 h-8"><img src="./Images/TinyFullscreen.svg" class=" scale-150"></button>
-                        <a href="https://github.com/RangerDevv"><div class=" w-8 h-8"><img src="./Images/TinyGithub.svg" class=" scale-150"></div></a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox"><div class=" w-8 h-8"><img src="./Images/TinyMail.svg" class=" scale-150"></div></a>
-                        <button class=" w-8 h-8" onclick="OpenAbout()"><img src="./Images/Tinyabout.svg" class=" scale-150"></button>
-                        <button class=" w-8 h-8" onclick="openSkills()"><img src="./Images/TinySkills.svg" class=" scale-150"></button>
-                        <button class=" w-8 h-8" onclick="openContacts()"><img src="./Images/Tinycontacks.svg" class=" scale-150"></button>
-                        <button class=" w-8 h-8" onclick="OpenProjects()"><img src="./Images/Tinyprojects.svg" class=" scale-150"></button>
-                    </div>
-                </div>
-        </div>
-        </div>
-    </div>
-    <div class=" hidden md:block">
+    <div class=" block">
         <div>
             <div class=" btm-nav btm-nav-md bg-slate-900 z-50">
                 <button onclick="openSkills()">
@@ -219,7 +199,7 @@
                     <p class=" h-16 text-transparent bg-clip-text bg-gradient-to-br sm:bg-current from-cyan-400 to-blue-800 text-5xl font-extrabold">Skills</p>
                 </div>
                 <!---Skills-->
-                <div class=" flex justify-center py-12">
+                <div class=" flex justify-center py-12 bg-slate-900">
                     <!-- Skills List -->
                     <div class=" text-white">
                         <div class=" flex gap-y-24 flex-col">
@@ -232,7 +212,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.  </p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:98; --size:12rem;">98%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">CSS</a>
@@ -242,7 +227,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
                                 </div>
+                                <div class="flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:95; --size:12rem;">95%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">BASH</a>
@@ -253,7 +243,12 @@
                                     <p class=" text-center w-96 text-lg">Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the ' Bourne-Again SHell ', a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh , which appeared in the Seventh Edition Bell Labs Research version of Unix.
                                     </p>
                                 </div>
+                                <div class="flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:80; --size:12rem;">80%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">Tailwindcss</a>
@@ -263,7 +258,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.</p>
                                 </div>
+                                <div class="flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:99; --size:12rem;">99%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">C++</a>
@@ -273,7 +273,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:15; --size:12rem;">15%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">JavaScript</a>
@@ -283,7 +288,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:75; --size:12rem;">75%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">Flutter</a>
@@ -293,7 +303,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Flutter is Google's free and open-source UI framework for creating native mobile applications. Released in 2017, Flutter allows developers to build mobile applications for both iOS and Android with a single codebase and programming language. This capability makes building iOS and Android apps simpler and faster.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:30; --size:12rem;">30%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">Vite</a>
@@ -303,7 +318,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Vite is a build tool that significantly improves the front-end development experience. You can use Vite to set up a development environment for frameworks like Vue and React, and even for a vanilla JavaScript app with a dev server and hot reloading in just three commands.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:99; --size:12rem;">99%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">Figma</a>
@@ -313,7 +333,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more. By learning to use Figma, you'll take your first steps into User Interface Design and and User Experience Design.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:100; --size:12rem;">100%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">ElectronJS</a>
@@ -323,7 +348,12 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Electron is a free and open-source software framework developed and maintained by GitHub. It allows for the development of desktop GUI applications using web technologies: it combines the Chromium rendering engine and the Node.js runtime. It was originally built for Atom.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:65; --size:12rem;">65%</div>
+                                </div>
+
                             </div>
+                            <div class=" divider"></div>
                             <div class=" md:flex gap-x-11">
                                 <div class=" flex gap-y-4 flex-col">
                                     <a href="" class=" text-white text-center text-2xl">BrainFu*k</a>
@@ -333,7 +363,11 @@
                                 <div class=" px-52">
                                     <p class=" text-center w-96 text-lg">Brainfuck is an esoteric programming language created in 1993 by Swiss physics student Urban Müller. Designed to be extremely minimalistic, the language consists of only eight simple commands.</p>
                                 </div>
+                                <div class=" flex md:justify-end justify-center">
+                                <div class="radial-progress bg-blue-600 text-primary-content border-4 border-primary" style="--value:98; --size:12rem;">98%</div>
+                                </div>
                             </div>
+                            <div class=" h-6"></div>
                     </div>
                 </div>
                 </div>
