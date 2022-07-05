@@ -14,7 +14,6 @@ function OpenAbout() {
     projects.style.display = "none";
     skills.style.display = "none";
     Contacts.style.display = "none";
-    shortcuts.style.display = "none";
     Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
@@ -29,7 +28,6 @@ function OpenProjects() {
     About.style.display = "none";
     skills.style.display = "none";
     Contacts.style.display = "none";
-    shortcuts.style.display = "none";
     Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
@@ -40,7 +38,6 @@ function openSkills() {
     About.style.display = "none";
     projects.style.display = "none";
     Contacts.style.display = "none";
-    shortcuts.style.display = "none";
     Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }
@@ -51,7 +48,6 @@ function openContacts() {
     About.style.display = "none";
     projects.style.display = "none";
     skills.style.display = "none";
-    shortcuts.style.display = "none";
     Quoteboard.style.display = "none";
     window. scrollTo(0,0);
 }

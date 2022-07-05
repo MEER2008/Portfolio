@@ -17,6 +17,11 @@ body {
     }
 }
 
+#Quoteboard {
+display: block;
+}
+
+
 #introtext {
     width: 50%;
 }
