@@ -42,6 +42,9 @@
         controlsLayout="{controlsLayout}"
       />
     </div>
-    <button class=" btn">
+    <div class="flex justify-center">
+    <button class=" w-32 h-12 bg-transparent rounded-lg text-white font-semibold text-center">
+        Click to learn more
     </button>
+    </div>
 </header>
