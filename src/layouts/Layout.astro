@@ -32,4 +32,12 @@ const { title } = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+	body {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 </style>
