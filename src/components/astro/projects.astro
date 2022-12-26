@@ -1,0 +1,27 @@
+---
+import SCard from "../svelte/s_card.svelte";
+import Astronaut from "../Img/astronaut-ingravity.png"
+---
+
+<main>
+    <p class=" text-4xl font-extrabold text-center text-white">Projects</p>
+    <div class=" flex flex-row gap-x-16 overflow-scroll pt-12" id="Scroll">
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+        <SCard Title={"Portfolio"} Desc={"The Website you are in right now."} Link="yoyo" Path={Astronaut}/>
+    </div>
+</main>
+
+<style>
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#Scroll::-webkit-scrollbar {
+  display: none;
+}
+
+</style>

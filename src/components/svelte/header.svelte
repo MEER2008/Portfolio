@@ -47,7 +47,7 @@
     </div>
     </div>
     <div class="flex justify-center">
-    <button class=" w-32 h-12 bg-transparent rounded-lg text-white font-semibold text-center mt-8">
+    <button class=" w-32 h-12 bg-transparent rounded-lg text-white font-semibold text-center mt-8 animate-bounce">
         Click to learn more
     </button>
     </div>
