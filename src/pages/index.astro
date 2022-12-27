@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/svelte/header.svelte";
+import About from "../components/astro/about.astro";
+import Skills from "../components/astro/skills.astro";
+import Cards from "../components/svelte/cards.svelte";
+import Projects from "../components/astro/projects.astro";
+import Contacts from "../components/svelte/contacts.svelte";
+---
+
+<Layout title="Rangerdevv">
+	<Header client:only="svelte" />
+	<About></About>
+	<Skills></Skills>
+	<!-- <Cards client:only="svelte" /> -->
+	<Projects></Projects>
+	<div class="w-screen h-20"></div>
+	<Contacts client:only="svelte"/>
+</Layout>
