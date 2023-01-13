@@ -31,7 +31,7 @@
         controlsLayout="{controlsLayout}"
         />
       </div>
-        <p class="w-96 sm:w-screen">Hello ✌️. The name's Ranger. </p>
+        <p class="w-96 sm:w-screen text-timberwolf">Hello ✌️. The name's Ranger. </p>
     <div class=" hidden sm:block">
         <LottiePlayer
         src="https://assets10.lottiefiles.com/packages/lf20_g2r05fgw.json"
@@ -46,9 +46,9 @@
       />
     </div>
     </div>
-    <div class="flex justify-center">
-    <button class=" w-32 h-12 bg-transparent rounded-lg text-white font-semibold text-center mt-8 animate-bounce">
-        Click to learn more
-    </button>
-    </div>
+    <!-- <div class="flex justify-center">
+    <a class=" w-32 h-12 bg-transparent rounded-lg text-timberwolf font-semibold text-center animate-bounce" href="/about">
+        Click here to learn more about me!
+    </a>
+    </div> -->
 </header>
