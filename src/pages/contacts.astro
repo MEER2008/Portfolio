@@ -1,5 +1,7 @@
 ---
 import Contacts from "../components/svelte/contacts.svelte";
+import Layout from "../layouts/Layout.astro";
 ---
-
+<Layout title="Contacts" prev="/projects" link="/">
 <Contacts client:only="svelte"/>
+</Layout>
