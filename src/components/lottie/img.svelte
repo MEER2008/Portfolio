@@ -1,5 +1,5 @@
 <script >
-import { LottiePlayer } from 'node_modules/@lotteries/svelte-lottie-player';
+import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
 let controlsLayout = [
 'previousFrame',
 'playpause',
