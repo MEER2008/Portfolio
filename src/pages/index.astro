@@ -3,7 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/svelte/header.svelte";
 // import Cards from "../components/svelte/cards.svelte";
 ---
-
+<script>
+	// redirect the user to /about when the user scrolls down
+	window.addEventListener("scroll", () => {
+		if (window.scrollY < innerHeight) {
+			window.location.href = "/about";
+		}
+	});
+</script>
 <Layout title="Rangerdevv" link="/about" prev="/">
 	<Header client:only="svelte" />
 	<!-- <Cards client:only="svelte" /> -->

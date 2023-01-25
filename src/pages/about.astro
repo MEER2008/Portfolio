@@ -2,7 +2,16 @@
 import About from "../components/astro/about.astro";
 import Layout from "../layouts/Layout.astro";
 ---
-
+<script>
+	// redirect the user to /about when the user scrolls down
+	window.addEventListener("scroll", () => {
+		if (window.scrollY > 0) {
+			window.location.href = "/projects";
+		} else {
+            window.location.href = "/";
+        }
+	});
+</script>
 <Layout title="about" prev="/" link="/skills">
 
 <About></About>
