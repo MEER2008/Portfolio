@@ -1,0 +1,39 @@
+---
+import SCard from "../svelte/s_card.svelte";
+---
+<script>
+    // go to credits.astro when the user scrolls to the bottom of the page
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            window.location.href = "/credits";
+        }
+    };
+</script>
+<body>
+    <p class=" text-4xl font-extrabold text-center text-timberwolf pt-5"> Skills</p>
+    <div class=" mt-8 grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 place-items-center">
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+        <SCard Desc="Hello" Title="Yessir" Path="Urmother" Link="Heheheh"></SCard>
+    </div>
+</body>
+
+<style>
+
+/* make the SCard componenet fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+SCard {
+    animation: fadeIn 500ms ease-in-out;
+}
+
+</style>

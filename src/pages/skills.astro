@@ -1,7 +1,19 @@
 ---
-import Skills from "../components/astro/skills.astro";
+import Skills from "../components/astro/skillComponenet.astro";
 import Layout from "../layouts/Layout.astro";
 ---
+<script>
+    // go to credits.astro when the user scrolls to the bottom of the page
+    window.onscroll = function(ev) {
+        if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+            window.location.href = "/credits";
+        }
+    };
+</script>
+
+
 <Layout link="/projects" title="Skills" prev="/about">
-<Skills></Skills>
+    <body>
+        <Skills></Skills>
+    </body>
 </Layout>
