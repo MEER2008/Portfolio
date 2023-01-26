@@ -5,8 +5,8 @@ import Layout from "../layouts/Layout.astro";
 <script>
 	// redirect the user to /about when the user scrolls down
 	window.addEventListener("scroll", () => {
-		if (window.scrollY > 0) {
-			window.location.href = "/projects";
+		if (window.scrollY > 20) {
+			window.location.href = "/skills";
 		} else {
             window.location.href = "/";
         }
