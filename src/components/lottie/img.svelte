@@ -17,7 +17,7 @@ let controlsLayout = [
 
 export let Link=string;
 </script>
-
+<div class="w-[350px] h-[350px]"> 
 <LottiePlayer
 src={Link}
 autoplay="{true}"
@@ -29,3 +29,4 @@ height="{350}"
 width="{350}"
 controlsLayout="{controlsLayout}"
 />
+</div>
