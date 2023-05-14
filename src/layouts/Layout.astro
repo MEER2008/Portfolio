@@ -1,11 +1,9 @@
 ---
 export interface Props {
 	title: string;
-	link: string;
-	prev:string;
 }
 
-const { title, link, prev } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -17,12 +15,12 @@ const { title, link, prev } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class=" bg-liberty">
-		<nav class="w-screen h-12 flex justify-center gap-12 pt-5 text-xl font-semibold">
-			<a class=" text-timberwolf" href="/about">About</a>
-			<a class=" text-timberwolf" href="/skills">Skills</a>
-			<a class=" text-timberwolf" href="/projects">Projects</a>
-			<a class=" text-timberwolf" href="/contacts">Contacts</a>
+	<body class="">
+		<nav class="w-screen h-12 flex justify-center gap-12 pt-5 text-xl font-light text-white">
+			<a class=" text-timberwolf" href="/">About</a>
+			<a class=" text-timberwolf" href="/">Skills</a>
+			<a class=" text-timberwolf" href="/">Projects</a>
+			<a class=" text-timberwolf" href="/">Contacts</a>
 		</nav>
 		<slot />
 		<!-- <div class=" text-timberwolf flex justify-center gap-5 text-xl">
@@ -33,8 +31,8 @@ const { title, link, prev } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		background-color: rgb(7, 7, 37);
+		color: white;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -44,12 +42,21 @@ const { title, link, prev } = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-	body {
-  overflow: auto;
-}
+	main {
+	  padding: 20px;
+	}
 
 body::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+/*  add a blur to the nav bar when scrolling */
+nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 </style>
