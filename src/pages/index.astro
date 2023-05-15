@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import PFP from '../components/Img/PFP.png'
-import SupabaseIcon from '../components/Img/skills/Supabase.png'
-import HTMLSkill from '../components/Img/skills/HTML.png'
-import AstroSkill from '../components/Img/skills/Astro.png'
-import TailwindSkill from '../components/Img/skills/Tailwind.png'
+import Supabase from '../components/Img/skills/Supabase.png'
+import HTML from '../components/Img/skills/HTML.png'
+import Astro from '../components/Img/skills/Astro.png'
+import Tailwind from '../components/Img/skills/Tailwind.png'
 
 let age = new Date().getFullYear() - 2008
 
@@ -46,10 +46,10 @@ if (age >= 14 && age <= 18) {
     <main class="flex flex-col pt-10 h-screen">
         <p class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
         <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto">
-            <img src={SupabaseIcon} alt="Supabase" class="w-32" />
-            <img src={HTMLSkill} alt="HTML" class="w-32" />
-            <img src={AstroSkill} alt="Astro" class="w-32" />
-            <img src={TailwindSkill} alt="Tailwind" class="w-40 h-28" />
+            <img src={Supabase} alt="Supabase" class="w-32" />
+            <img src={HTML} alt="HTML" class="w-32" />
+            <img src={Astro} alt="Astro" class="w-32" />
+            <img src={Tailwind} alt="Tailwind" class="w-40 h-28" />
         </div>
     </main>
 </Layout>
