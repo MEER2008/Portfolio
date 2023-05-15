@@ -15,48 +15,21 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="">
-		<nav class="w-screen h-12 flex justify-center gap-12 pt-5 text-xl font-light text-white">
-			<a class=" text-timberwolf" href="/">About</a>
-			<a class=" text-timberwolf" href="/">Skills</a>
-			<a class=" text-timberwolf" href="/">Projects</a>
-			<a class=" text-timberwolf" href="/">Contacts</a>
-		</nav>
+	<body>
 		<slot />
-		<!-- <div class=" text-timberwolf flex justify-center gap-5 text-xl">
-			<a href={prev}>Previous</a>
-			<a href={link}>Next</a>
-		</div> -->
 	</body>
 </html>
 <style is:global>
 	:root {
-		background-color: rgb(7, 7, 37);
-		color: white;
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		/* background-color: #2f2f2f; */
+		background-color: #F6F6F6;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-	main {
-	  padding: 20px;
-	}
-
-body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-/*  add a blur to the nav bar when scrolling */
-nav {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 </style>
