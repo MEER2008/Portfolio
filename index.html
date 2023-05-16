@@ -21,7 +21,7 @@
 
         <!--  a bouncing SVG arrow -->
         <div class="flex flex-col justify-center items-center pt-10">
-            <p class="text-white font-extralight text-xl">Scroll down</p>
+            <p class="text-white font-extralight text-xl">Scroll down to learn more about me</p>
             <svg class="animate-bounce w-16 h-16 text-white pt-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -187,15 +187,38 @@
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		/* background-color: #2f2f2f; */
+        /*  regular font size */
+        font-size: 1.5rem;
 	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-	main {
-	  padding: 20px;
-	}
+
+    /*  make the text regular size when the screen is a 13 inch screen */
+    @media (min-width: 720px) {
+        html {
+            font-size: 1rem;
+        }
+        main {
+            padding: 20px;
+        }
+    }
+
+    /*  increase the font size when the screen is a 27 inch screen */
+    @media (min-width: 1440px) {
+        html {
+            font-size: 2rem;
+        }
+        main {
+            padding: 70px;
+        }
+    }
+
+
+code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+        Bitstream Vera Sans Mono, Courier New, monospace;
+}
+main {
+    padding: 20px;
+}
 
 body::-webkit-scrollbar {
   width: 0;
