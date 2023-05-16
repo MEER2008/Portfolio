@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RangerDevv</title>
     <link rel="stylesheet" href="/dist/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 </head>
 <body>
-    <nav class="w-screen h-12 flex justify-center gap-12 pt-5 text-xl font-light text-white">
-        <a class=" text-timberwolf" href="/">About</a>
-        <a class=" text-timberwolf" href="/">Skills</a>
-        <a class=" text-timberwolf" href="/">Projects</a>
-        <a class=" text-timberwolf" href="/">Contacts</a>
+    <nav class="w-screen h-auto flex justify-center gap-12 pt-2 text-xl font-light text-white">
+        <a class="item p-1.5" href="/">About</a>
+        <a class="item p-1.5" href="/">Skills</a>
+        <a class="item p-1.5" href="/">Projects</a>
+        <a class="item p-1.5" href="/">Contacts</a>
     </nav>
     <header class="flex flex-col justify-center items-center h-screen pb-24">
         <p class="text-4xl font-bold text-center">👋 I am RangerDevv.</p>
         <p class="text-2xl font-normal text-center">A passionate developer who likes to explore and build thing.</p>
+
+        <!--  a bouncing SVG arrow -->
+        <div class="flex flex-col justify-center items-center pt-10">
+            <p class="text-white font-extralight text-xl">Scroll down</p>
+            <svg class="animate-bounce w-16 h-16 text-white pt-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
     </header>
     <main class="flex md:flex-row flex-col-reverse justify-center h-[calc(100vh-4rem)]">
         <div class="flex flex-col md:w-1/2">
-            <p class="text-4xl font-bold pt-10 md:pt-0">About Me 🚀</p>
-            <p class="text-xl font-normal pt-4">I am RangerDevv. (aka Meer, Ranger). I am a web developer who started coding when I was 12 and I have come a long way since. I love to make websites and make Figma UI designs just for fun 😁. Here are some facts about me: <br>
-            - 🎉 I am {age} years old <br>
-            - 🎓 I am in {education} <br>
+            <p id="title" class="text-4xl font-bold pt-10 md:pt-0">About Me 🚀</p>
+            <p class="text-xl font-normal pt-4 md:w-[27rem]">I am RangerDevv. (aka Meer, Ranger). I am a web developer who started coding when I was 12 and I have come a long way since. I love to make websites and make Figma UI designs just for fun 😁. Here are some facts about me: <br>
+            - 🎉 I am <span id="age"></span> years old <br>
+            - 🎓 I am in <span id="edu"></span> <br>
             - ⚽ I love to play soccer <br>
             - 🎮 I love to play video games <br>
             - 🎨 I love to make Figma UI designs <br>
@@ -36,24 +45,30 @@
             <img src="src/images/PFP.png" alt="PFP" class=" w-1/2 mx-auto" />
         </div>
     </main>
-    <main class="flex flex-col pt-10 h-screen">
-        <p class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
-        <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto">
-            <img src="src/images/supabase.png" alt="Supabase" class="w-32" />
-            <img src="src/images/HTML.png" alt="HTML" class="w-32" />
-            <img src="src/images/Astro.png" alt="Astro" class="w-32" />
-            <img src="src/images/Tailwind.png" alt="Tailwind" class="w-40 h-28" />
+    <main class="flex flex-col pt-10">
+        <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
+        <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto justify-center">
+            <img src="src/images/supabase.png" alt="Supabase" class="w-auto h-20" />
+            <img src="src/images/HTML.png" alt="HTML" class="w-auto h-20 scale-[2]" />
+            <img src="src/images/Astro.png" alt="Astro" class="w-auto h-20" />
+            <img src="src/images/Tailwind.png" alt="Tailwind" class="w-auto h-20" />
+            <img src="src/images/Arduino.png" alt="JS" class="w-auto h-20" />
+            <img src="src/images/JS.png" alt="JS" class="w-auto h-20" />
+            <img src="src/images/Svelte.png" alt="Svelte" class="w-auto h-20" />
+            <img src="src/images/React.png" alt="React" class="w-auto h-20" />
+            <img src="src/images/Appwrite.png" alt="Appwrite" class="w-auto h-20" />
+            <img src="src/images/python.png" alt="Python" class="w-auto h-20 scale-[2]" />
         </div>
     </main>
-    <main class="flex flex-col pt-10 h-screen">
-        <p class="text-4xl font-bold pt-10 md:pt-0 text-center">Projects 📁</p>
+    <main class="flex flex-col pt-10">
+        <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Projects 📁</p>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/Cursorbridge.png" alt="Project1" class="w-auto" />
             </div>
             <div class="p-5">
                 <p class="text-2xl font-bold pt-10 md:pt-0 text-center">CursorBridge</p>
-                <p class="text-xl font-normal pt-4">CursorBridge is a platform where you can find the code for buttons, search bars, and icons. This project was one of my first projects where I utilized proper <span class="text-yellow-300">JS</span>. This project used vanilla <span class="text-orange-500">HTML</span> as well as <span class="text-blue-500">CSS</span>.</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">CursorBridge is a platform where you can find the code for buttons, search bars, and icons. This project was one of my first projects where I utilized proper <span class="text-yellow-300">JS</span>. This project used vanilla <span class="text-orange-500">HTML</span> as well as <span class="text-blue-500">CSS</span>.</p>
             </div>
         </div>
         <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
@@ -62,11 +77,11 @@
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/image 9.png" alt="Project1" class="w-auto h-96" />
             </div>
             <div class="p-5">
-                <p class="text-2xl font-bold pt-10 md:pt-0 text-center">Neia</p>
-                <p class="text-xl font-normal pt-4">Neia was my first attempt to create an electron application. Neia is a text based RPG game that involved a combat system, coins system, XP system and much more. This used <span class="text-cyan-500">Tailwindcss</span> as well as <span class="text-yellow-300">JS</span> and <span class="text-orange-500">HTML</span>. This project was a great learning experience for me as I learned how to use <span class="text-cyan-500">Tailwindcss</span> and <span class="text-blue-300">Electron</span> to create a desktop application.</p>
+                <p class="text-2xl font-bold pt-10 md:pt-0 text-center">CaseIt</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">CaseIt is an electron application that allows you to write tests quicker and faster. This used <span class="text-cyan-500">Tailwindcss</span> as well as <span class="text-yellow-300">JS</span> and <span class="text-orange-500">HTML</span>. This project was a great learning experience for me as I learned how to properly use the OpenAI API and <span class="text-blue-300">Electron</span> to create a desktop application that was not only useful but also visually appealing.</p>
             </div>
         </div>
         <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
@@ -74,43 +89,88 @@
         </div>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/image 6.png" alt="Project1" class="w-auto" />
             </div>
             <div class="p-5">
                 <p class="text-2xl font-bold pt-10 md:pt-0 text-center">DopeUI</p>
-                <p class="text-xl font-normal pt-4">DopeUI is an <span class="text-blue-300">Electron</span> application that uses the OpenAI API to generate <span class="text-cyan-500">Tailwindcss</span> components. This was my first ever successful product that sold 3 copies and generated a total revenue of $15.</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">DopeUI is an <span class="text-blue-300">Electron</span> application that uses the OpenAI API to generate <span class="text-cyan-500">Tailwindcss</span> components. This was my first ever successful product that sold 3 copies and generated a total revenue of $15.</p>
             </div>
+        </div>
+        <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
+            <a href="https://www.producthunt.com/products/dope-ui-v2"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/ReWrit.png" alt="Project1" class="w-auto" />
             </div>
             <div class="p-5">
                 <p class="text-2xl font-bold pt-10 md:pt-0 text-center">ReWrit</p>
-                <p class="text-xl font-normal pt-4">ReWrit is a platform that I created that uses <span class="text-green-500">Supabase</span>, <span class="text-orange-500">AstroJS</span>, and <span class="text-gray-500">Vercel</span>. This was my first ever complex project that has a database and it was my first attempt to create a website that was community based. This project took me approximately 2 months to build and it helped me master  <span class="text-green-500">Supabase</span>.</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">ReWrit is a platform that I created that uses <span class="text-green-500">Supabase</span>, <span class="text-orange-500">AstroJS</span>, and <span class="text-gray-500">Vercel</span>. This was my first ever complex project that has a database and it was my first attempt to create a website that was community based. This project took me approximately 2 months to build and it helped me master  <span class="text-green-500">Supabase</span>.</p>
             </div>
+        </div>
+        <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
+            <a href="https://rewrit.vercel.app"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
+            <a href="https://github.com/RangerDevv/ReWrit"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/Rocketspace.png" alt="Project1" class="w-auto" />
             </div>
             <div class="p-5">
                 <p class="text-2xl font-bold pt-10 md:pt-0 text-center">RocketSpace</p>
-                <p class="text-xl font-normal pt-4">RocketSpace is the website that I created when I was competing for the <strong>PA TSA Webmaster Tournament</strong>. This website took me 4 months to create and was buit using <span class="text-yellow-500">JS</span>, <span class="text-orange-500">HTML</span>, <span class="text-cyan-500">Tailwindcss</span>. It used lottie animations and also used animate.js and also allowed me to compete in a website tournament for the first time. This website qualified for the State semi-finalist and placed in 9th place.</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">RocketSpace is the website that I created when I was competing for the <strong>PA TSA Webmaster Tournament</strong>. This website took me 4 months to create and was buit using <span class="text-yellow-500">JS</span>, <span class="text-orange-500">HTML</span>, <span class="text-cyan-500">Tailwindcss</span>. It used lottie animations and also used animate.js and also allowed me to compete in a website tournament for the first time. This website qualified for the State semi-finalist and placed in 9th place.</p>
             </div>
+        </div>
+        <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
+            <a href="https://rocketspace.vercel.app"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
+            <a href="https://github.com/RangerDevv/RocketryDummy"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
             <div>
-                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+                <img src="src/images/DopeAI.png" alt="Project1" class="w-auto" />
             </div>
             <div class="p-5">
                 <p class="text-2xl font-bold pt-10 md:pt-0 text-center">DopeAI</p>
-                <p class="text-xl font-normal pt-4">DopeAI is a suite of AI tools that I created using the Open AI API and <span class="text-blue-300">Electron</span>. All of these products are a way for me to test what AI tools people are interested in, and it allows me to make more apps that better help the developers.</p>
+                <p class="text-xl font-normal pt-4 md:w-[27rem]">DopeAI is a suite of AI tools that I created using the Open AI API and <span class="text-blue-300">Electron</span>. All of these products are a way for me to test what AI tools people are interested in, and it allows me to make more apps that better help the developers.</p>
             </div>
         </div>
+        <div class="flex flex-row gap-6 pt-5 justify-center pb-5">
+            <a href="https://DopeAI.vercel.app"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
+            <a href="https://github.com/RangerDevv/DopeAI"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
+        </div>
     </main>
+    <main class="flex flex-col pt-10 ">
+        <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">My Design Preferences 🎨</p>
+        <div class="flex flex-col justify-center text-xl text-left p-10 gap-5">
+            <p>- I love using <span class="text-gradient bg-gradient-to-r from-green-400 to-blue-500">gradient text</span> in my projects. I think it adds a nice touch to the project and makes it look more professional.</p>
+            <p>- I love using Emojis 😁 to my project. It makes the website stand out and gives a nice touch to the website.</p>
+            <p>- I love using animation libraries like <span class="text-yellow-500">Lottie</span> and <span class="text-cyan-500">Animate.js</span> to make my website look more professional and alive 🤩.</p>
+            <p>- I prefer using <span class="text-blue-500">TailwindCSS</span> over <span class="text-red-500">Bootstrap</span> because I think it is easier to use and it is more customizable.</p>
+            <p>- My color preferences are usually something light that does not hurt the eyes. I also like using dark mode because it is easier on the eyes. (dark mode over light mode any day).</p>
+        </div>
+    </main>
+    <footer class="flex sm:flex-row pt-10 justify-evenly flex-col">
+    <div>
+        <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Contact Me 📞</p>
+        <div class="flex flex-col justify-center text-xl text-left p-10 gap-5" id="contect">
+            <p>- Discord - <span class="text-blue-500">RangerDevv#1000</span></p>
+            <p>- Email - <span class="text-blue-500">meerabdul2008@gmail.com </span></p>
+            <p>- Github - <span class="text-blue-500 underline underline-offset-2" id="link"> <a href="https://github.com/RangerDevv">RangerDevv</a></span></p>
+            <p>- Twitter - <span class="text-blue-500 underline underline-offset-2" id="link"> <a href="https://twitter.com/RangerDevv">RangerDevv</a></span></p>
+        </div>
+    </div>
+    <img src="./src/images/programmer-memes.jpg" alt="Programmer Memes" class="w-auto h-56" />
+    <img src="./src/images/2p4uc6d45yka1.jpg" alt="Programmer Memes" class="w-auto h-56" />
+    </footer>
+
+    <div class="w-screen h-24 text-center text-gray-500 items-center pt-20">Made With 💖 By RangerDevv. Licensed under MIT</div>
 </body>
 </html>
+
+<script src="./index.js"></script>
+<script>
+    lazyload();
+</script>
 
 <style>
 	:root {
@@ -138,8 +198,30 @@ body::-webkit-scrollbar {
 nav {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
+  padding-bottom: 15px;
+}
+
+nav .item {
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+nav .item:hover {
+  background-color: #63636379;
+}
+
+#title {
+  background: -webkit-linear-gradient(#11f2ab, #555bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact #link {
+  text-decoration:wavy underline;
+  /*  make the underline go a little bit under the text */
+    text-underline-offset: 3px;
 }
 </style>
