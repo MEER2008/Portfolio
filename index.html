@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RangerDevv</title>
+    <link rel="stylesheet" href="/dist/styles.css">
+</head>
+<body>
+    <nav class="w-screen h-12 flex justify-center gap-12 pt-5 text-xl font-light text-white">
+        <a class=" text-timberwolf" href="/">About</a>
+        <a class=" text-timberwolf" href="/">Skills</a>
+        <a class=" text-timberwolf" href="/">Projects</a>
+        <a class=" text-timberwolf" href="/">Contacts</a>
+    </nav>
+    <header class="flex flex-col justify-center items-center h-screen pb-24">
+        <p class="text-4xl font-bold text-center">👋 I am RangerDevv.</p>
+        <p class="text-2xl font-normal text-center">A passionate developer who likes to explore and build thing.</p>
+    </header>
+    <main class="flex md:flex-row flex-col-reverse justify-center h-[calc(100vh-4rem)]">
+        <div class="flex flex-col md:w-1/2">
+            <p class="text-4xl font-bold pt-10 md:pt-0">About Me 🚀</p>
+            <p class="text-xl font-normal pt-4">I am RangerDevv. (aka Meer, Ranger). I am a web developer who started coding when I was 12 and I have come a long way since. I love to make websites and make Figma UI designs just for fun 😁. Here are some facts about me: <br>
+            - 🎉 I am {age} years old <br>
+            - 🎓 I am in {education} <br>
+            - ⚽ I love to play soccer <br>
+            - 🎮 I love to play video games <br>
+            - 🎨 I love to make Figma UI designs <br>
+            - 🚲I love to ride my bike when the weather is good <br>
+            - 🎵 I love to listen to music <br>
+            - 🚗 I love Audi cars
+            </p>
+        </div>
+        <div class="flex flex-col justify-center md:w-1/2">
+            <img src="src/images/PFP.png" alt="PFP" class=" w-1/2 mx-auto" />
+        </div>
+    </main>
+    <main class="flex flex-col pt-10 h-screen">
+        <p class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
+        <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto">
+            <img src="src/images/supabase.png" alt="Supabase" class="w-32" />
+            <img src="src/images/HTML.png" alt="HTML" class="w-32" />
+            <img src="src/images/Astro.png" alt="Astro" class="w-32" />
+            <img src="src/images/Tailwind.png" alt="Tailwind" class="w-40 h-28" />
+        </div>
+    </main>
+    <main class="flex flex-col pt-10 h-screen">
+        <p class="text-4xl font-bold pt-10 md:pt-0 text-center">Projects 📁</p>
+        <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
+            <div>
+                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+            </div>
+            <div class="p-5">
+                <p class="text-2xl font-bold pt-10 md:pt-0 text-center">CursorBridge</p>
+                <p class="text-xl font-normal pt-4">CursorBridge is a platform where you can find the code for buttons, search bars, and icons. This project was one of my first projects where I utilized proper <span class="text-yellow-300">JS</span>. This project used vanilla <span class="text-orange-500">HTML</span> as well as <span class="text-blue-500">CSS</span>.</p>
+            </div>
+        </div>
+        <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
+            <div>
+                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+            </div>
+            <div class="p-5">
+                <p class="text-2xl font-bold pt-10 md:pt-0 text-center">Neia</p>
+                <p class="text-xl font-normal pt-4">Neia was my first attempt to create an election application. This used <span class="text-cyan-500">Tailwindcss</span> as well as <span class="text-yellow-300">JS</span> and <span class="text-orange-500">HTML</span>. This project was a great learning experience for me as I learned how to use <span class="text-cyan-500">Tailwindcss</span> and <span class="text-blue-300">Electron</span> to create a desktop application.</p>
+            </div>
+        </div>
+        <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
+            <div>
+                <img src="src/images/Project1.png" alt="Project1" class="w-96 h-72" />
+            </div>
+            <div class="p-5">
+                <p class="text-2xl font-bold pt-10 md:pt-0 text-center">DopeUI</p>
+                <p class="text-xl font-normal pt-4">DopeUI is an  <span class="text-blue-300">Electron</span> application that uses the OpenAI API to generate <span class="text-cyan-500">Tailwindcss</span> components. This was my first ever successful product that sold 3 copies and generated a total revenue of $15.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+	:root {
+		background-color: rgb(7, 7, 37);
+		color: white;
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		/* background-color: #2f2f2f; */
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+	main {
+	  padding: 20px;
+	}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/*  add a blur to the nav bar when scrolling */
+nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+</style>
