@@ -8,7 +8,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "server",
   adapter: vercel({
-    imageService: true
+    imageService: false
   }),
   integrations: [svelte(), tailwind()]
 });
