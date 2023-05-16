@@ -785,6 +785,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-\[150px\] {
+  font-size: 150px;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -849,6 +861,14 @@ video {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[px\] {
+  color: px;
 }
 
 .underline {
