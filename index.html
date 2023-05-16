@@ -10,10 +10,10 @@
 </head>
 <body>
     <nav class="w-screen h-auto flex justify-center gap-12 pt-2 text-xl font-light text-white">
-        <a class="item p-1.5" href="/">About</a>
-        <a class="item p-1.5" href="/">Skills</a>
-        <a class="item p-1.5" href="/">Projects</a>
-        <a class="item p-1.5" href="/">Contacts</a>
+        <a class="item p-1.5" href="#about">About</a>
+        <a class="item p-1.5" href="#skills">Skills</a>
+        <a class="item p-1.5" href="#projects">Projects</a>
+        <a class="item p-1.5" href="#contact">Contact</a>
     </nav>
     <header class="flex flex-col justify-center items-center h-screen pb-24">
         <p class="text-4xl font-bold text-center">👋 I am RangerDevv.</p>
@@ -27,7 +27,7 @@
             </svg>
         </div>
     </header>
-    <main class="flex md:flex-row flex-col-reverse justify-center h-[calc(100vh-4rem)]">
+    <main class="flex md:flex-row flex-col-reverse justify-center h-[calc(100vh-4rem)]" id="about">
         <div class="flex flex-col md:w-1/2">
             <p id="title" class="text-4xl font-bold pt-10 md:pt-0">About Me 🚀</p>
             <p class="text-xl font-normal pt-4 md:w-[27rem]">I am RangerDevv. (aka Meer, Ranger). I am a web developer who started coding when I was 12 and I have come a long way since. I love to make websites and make Figma UI designs just for fun 😁. Here are some facts about me: <br>
@@ -45,7 +45,7 @@
             <img src="src/images/PFP.png" alt="PFP" class=" w-1/2 mx-auto" />
         </div>
     </main>
-    <main class="flex flex-col pt-10">
+    <main class="flex flex-col pt-10" id="skills">
         <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
         <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto justify-center">
             <img src="src/images/supabase.png" alt="Supabase" class="w-auto h-20" />
@@ -60,7 +60,7 @@
             <img src="src/images/python.png" alt="Python" class="w-auto h-20 scale-[2]" />
         </div>
     </main>
-    <main class="flex flex-col pt-10">
+    <main class="flex flex-col pt-10" id="projects">
         <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Projects 📁</p>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
             <div>
@@ -149,7 +149,7 @@
             <p>- My color preferences are usually something light that does not hurt the eyes. I also like using dark mode because it is easier on the eyes. (dark mode over light mode any day).</p>
         </div>
     </main>
-    <footer class="flex sm:flex-row pt-10 justify-evenly flex-col">
+    <footer class="flex sm:flex-row pt-10 justify-evenly flex-col" id="contact">
     <div>
         <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Contact Me 📞</p>
         <div class="flex flex-col justify-center text-xl text-left p-10 gap-5" id="contect">
@@ -176,6 +176,10 @@
 	:root {
 		background-color: rgb(7, 7, 37);
 		color: white;
+        /*  smooth scrolling */
+        scroll-behavior: smooth;
+        /*  make the scroll fluid like mac */
+        -webkit-overflow-scrolling: touch;
 	}
 	html {
 		font-family: system-ui, sans-serif;
