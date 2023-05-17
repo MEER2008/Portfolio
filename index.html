@@ -15,16 +15,17 @@
         <a class="item p-1.5" href="#projects">Projects</a>
         <a class="item p-1.5" href="#contact">Contact</a>
     </nav>
-    <header class="flex flex-col justify-center items-center pb-24">
-        <p class="text-[100px] font-bold text-center pt-16">👋 I am Ranger Dev.</p>
-        <p class="text-2xl font-normal text-center pt-5">A passionate developer who likes to explore and build thing.</p>
-
-        <!--  a bouncing SVG arrow -->
-        <div class="flex flex-col justify-center items-center pt-10">
-            <p class="text-white font-extralight text-xl">Scroll down to learn more about me</p>
-            <svg class="animate-bounce w-16 h-16 text-white pt-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+    <header class="flex flex-row justify-center items-center pb-24 h-[100vh]">
+        <div>
+            <p class="text-6xl font-bold text-center pt-16">👋 I am Ranger Dev.</p>
+            <p class="text-2xl font-normal text-center pt-5">A passionate developer who likes to explore and build thing.</p>
+            <!--  a bouncing SVG arrow -->
+            <div class="flex flex-col justify-center items-center pt-10">
+                <p class="text-white font-extralight text-xl">Scroll down to learn more about me</p>
+                <svg class="animate-bounce w-16 h-16 text-white pt-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
         </div>
     </header>
     <main class="flex md:flex-row flex-col-reverse justify-center" id="about">
@@ -45,7 +46,7 @@
             <img src="src/images/PFP.png" alt="PFP" class=" w-1/2 mx-auto" />
         </div>
     </main>
-    <main class="flex flex-col pt-10" id="skills">
+    <main class="flex flex-col pt-10 h-[80vh]" id="skills">
         <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Skills 🛠</p>
         <div class="flex flex-row flex-wrap pt-10 gap-16 mx-auto justify-center">
             <img src="src/images/supabase.png" alt="Supabase" class="w-auto h-20" />
@@ -63,7 +64,7 @@
     <main class="flex flex-col pt-10" id="projects">
         <p id="title" class="text-4xl font-bold pt-10 md:pt-0 text-center">Projects 📁</p>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe src="https://cursorbridge.github.io" class="md:w-[35rem] h-[20rem] text-white" zoom="0.5"></iframe>
                 <p class="text-center pt-2 md:w-[35rem]">⚠️ This is just an Iframe of the website, some parts of the website may look broken. Please visit the website to see the full experience. ⚠️</p>
             </div>
@@ -77,7 +78,7 @@
             <a href="https://github.com/CursorBridge/CursorBridge.github.io"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe style="border: none;" src="https://cards.producthunt.com/cards/products/533280" frameborder="0" scrolling="no" allowfullscreen class="md:w-[35rem] h-[20rem] text-white"></iframe>
             </div>
             <div class="p-5">
@@ -89,7 +90,7 @@
             <a href="https://www.producthunt.com/products/caseit"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/390518?v=1" frameborder="0" scrolling="no" allowfullscreen class="md:w-[35rem] h-[20rem] text-white"></iframe>
             </div>
             <div class="p-5">
@@ -101,7 +102,7 @@
             <a href="https://www.producthunt.com/products/dope-ui-v2"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Website 🌐</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe style="border: none;" src="https://rewrit.vercel.app" class="md:w-[35rem] h-[20rem] text-white"></iframe>
                 <p class="text-center pt-2 md:w-[35rem]">⚠️ This is just an Iframe of the website, some parts of the website may look broken. Please visit the website to see the full experience. ⚠️</p>
             </div>
@@ -115,7 +116,7 @@
             <a href="https://github.com/RangerDevv/ReWrit"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe style="border: none;" src="https://rocketspace.vercel.app" class="md:w-[35rem] h-[20rem] text-white"></iframe>
                 <p class="text-center pt-2 md:w-[35rem]">⚠️ This is just an Iframe of the website, some parts of the website may look broken. Please visit the website to see the full experience. ⚠️</p>
             </div>
@@ -129,7 +130,7 @@
             <a href="https://github.com/RangerDevv/RocketryDummy"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Github 📁</button></a>
         </div>
         <div class="w-screen p-5 flex sm:flex-row-reverse flex-col justify-center gap-10 md:gap-20">
-            <div>
+            <div class="items-center">
                 <iframe style="border: none;" src="https://dopeai.vercel.app" class="md:w-[35rem] h-[20rem] text-white"></iframe>
                 <p class="text-center pt-2 md:w-[35rem]">⚠️ This is just an Iframe of the website, some parts of the website may look broken. Please visit the website to see the full experience. ⚠️</p>
             </div>
