@@ -15,7 +15,7 @@
         <a class="item p-1.5" href="#projects">Projects</a>
         <a class="item p-1.5" href="#contact">Contact</a>
     </nav>
-    <header class="flex flex-col justify-center items-center h-screen pb-24">
+    <header class="flex flex-col justify-center items-center pb-24">
         <p class="text-[100px] font-bold text-center">👋 I am Ranger Dev.</p>
         <p class="text-2xl font-normal text-center pt-5">A passionate developer who likes to explore and build thing.</p>
 
@@ -27,7 +27,7 @@
             </svg>
         </div>
     </header>
-    <main class="flex md:flex-row flex-col-reverse justify-center h-[calc(100vh-4rem)]" id="about">
+    <main class="flex md:flex-row flex-col-reverse justify-center" id="about">
         <div class="flex flex-col md:w-1/2">
             <p id="title" class="text-4xl font-bold pt-10 md:pt-0">About Me 🚀</p>
             <p class="text-xl font-normal pt-4 md:w-[27rem]">I am RangerDev, (aka Meer, Ranger). I am a web developer who started coding when I was 12 and I have come a long way since. I love building websites and designing user interfaces for fun. Here are some facts about me: <br>
@@ -208,6 +208,16 @@
         }
         main {
             padding: 70px;
+        }
+    }
+
+    /*  decrease the font size when the screen is a mobile screen */
+    @media (max-width: 720px) {
+        html {
+            font-size: 0.5rem;
+        }
+        main {
+            padding: 20px;
         }
     }
 
