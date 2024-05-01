@@ -1,0 +1,100 @@
+<script>
+
+        // This only runs once.
+        let listOfEcoWrods=[
+            'design',
+            'code',
+            'create',
+            'learn',
+            'explore',
+            'innovate',
+            'inspire',
+            'grow',
+            'build',
+            'help',
+        ] 
+
+        // change the word with a slight transition
+        function changeWord(){
+            let bodWord = document.getElementById('changedWord') as HTMLSpanElement;
+            let randomWord = listOfEcoWrods[Math.floor(Math.random() * listOfEcoWrods.length)];
+            let typingSpeed = 150; // Adjust the typing speed (in milliseconds) as desired
+            let backspaceSpeed = 50; // Adjust the backspace speed (in milliseconds) as desired
+
+            function typeAndBackspace(word: string) {
+                let currentIndex = 0;
+                let intervalId = setInterval(() => {
+                    if (currentIndex < word.length) {
+                        bodWord.textContent = word.substring(0, currentIndex + 1);
+                        currentIndex++;
+                    } else {
+                        clearInterval(intervalId);
+                        setTimeout(() => {
+                            let backspaceIntervalId = setInterval(() => {
+                                if (currentIndex >= 0) {
+                                    bodWord.textContent = word.substring(0, currentIndex);
+                                    currentIndex--;
+                                } else {
+                                    clearInterval(backspaceIntervalId);
+                                    setTimeout(() => {
+                                        let newRandomWord = listOfEcoWrods[Math.floor(Math.random() * listOfEcoWrods.length)];
+                                        typeAndBackspace(newRandomWord);
+                                    }, typingSpeed);
+                                }
+                            }, backspaceSpeed);
+                        }, typingSpeed);
+                    }
+                }, typingSpeed);
+            }
+
+            typeAndBackspace(randomWord);
+        }
+
+        changeWord();
+</script>
+
+<div class="flex flex-row sm:flex-row  items-center h-[80vh]">
+    <div class="flex flex-col gap-5 pl-10 sm:w-1/2">
+        <p class="text-6xl font-extrabold">Hi, I am <span class="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Meer.</span></p>
+        <p class="text-2xl font-medium">I am a developer who loves to <span class="bg-gradient-to-tr from-white via-blue-500 to-red-600 inline-block text-transparent bg-clip-text" id="changedWord">read</span>.
+    </div>
+    <div class="sm:flex flex-col sm:block hidden w-auto">
+        <p class="text-xs" id="ASCII">
+            ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌ ‌‌_______________________________________________
+            /                                                \
+           |    _________________________________________     |
+           |   |                                         |    |
+           |   |<span class="text-green-600">meer@n0t3b00k</span>:~/rangerdevv.github.io$:   |    |
+           |   |                                         |    |
+           |   |> console.log("Welcome to my Portfolio") |    |
+           |   |                                         |    |
+           |   |> console.log("Scroll to learn more")    |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |                                         |    |
+           |   |_________________________________________|    |
+           |                                                  |
+            \_________________________________________________/
+                   \___________________________________/
+                ___________________________________________
+             _-'    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.  --- `-_
+          _-'.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.  .-.-.`-_
+       _-'.-.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-`__`. .-.-.-.`-_
+    _-'.-.-.-.-. .-----.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-----. .-.-.-.-.`-_
+ _-'.-.-.-.-.-. .---.-. .-------------------------. .-.---. .---.-.-.-.`-_
+:-------------------------------------------------------------------------:
+`---._.-------------------------------------------------------------._.---'
+</p>
+    </div>
+</div>
+
+<style>
+    #ASCII {
+        font-family: monospace;
+        white-space: pre;
+    }
+</style>

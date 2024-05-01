@@ -1,0 +1,54 @@
+---
+export interface Props {
+	title: string;
+	path?: string;
+}
+
+const { title,path } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="bg-[#e9edf0] text-black">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body>
+        <header>
+            <nav class=" flex flex-row mx-auto rounded-full outline outline-white w-1/2 h-auto mt-5 sticky top-5">
+                <div class="flex-1 p-4">
+                    <a href="/" class="p-4 font-extrabold">RangerDevv</a>
+                </div>
+                <a href="/about" class="p-4">About</a>
+                <a href="/contact" class="p-4">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <slot />
+        </main>
+        <footer class="text-center">
+            <p>&copy; {new Date().getFullYear()} Astro</p>
+        </footer>
+</html>
+
+<style is:global>
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+    :root {
+        background-color: black;
+        color: white;
+        font-family: 'Schibsted Grotesk', sans-serif;
+    }
+
+    /* increase the font sizes depending on how big the screen is but keep it the default size on mobile and 768px */
+	@media (min-width: 1440px) {
+		html {
+			font-size: calc(18px + (24 - 18) * ((100vw - 768px) / (1920 - 768)));
+		}
+	}
+</style>
