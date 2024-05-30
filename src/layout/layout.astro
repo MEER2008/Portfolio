@@ -5,6 +5,12 @@ export interface Props {
 }
 
 const { title,path } = Astro.props;
+
+// date time variable
+
+let dateVariable = new Date().toLocaleTimeString();
+
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!DOCTYPE html>
@@ -16,33 +22,47 @@ const { title,path } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+        <ViewTransitions />
 	</head>
     <body>
         <header>
-            <nav class=" flex flex-row mx-auto rounded-full outline outline-white w-1/2 h-auto mt-5 sticky top-5">
-                <div class="flex-1 p-4">
-                    <a href="/" class="p-4 font-extrabold">RangerDevv</a>
-                </div>
-                <a href="/about" class="p-4">About</a>
-                <a href="/contact" class="p-4">Contact</a>
+            <nav class="flex flex-row w-full h-8 pt-1 justify-between pl-2 pr-2">
+                <a href="/" class="">Home</a>
+            <div class="flex flex-row gap-5">
+                <!-- current time that updates every second -->
+                <p>{dateVariable}</p>
+                <!-- fake battery percentage -->
+                <p>🔋48%</p>
+            </div>
             </nav>
         </header>
         <main>
             <slot />
         </main>
-        <footer class="text-center">
-            <p>&copy; {new Date().getFullYear()} Astro</p>
+
+        <!-- the footer is a taskbar center the taskbar itself and have the links to the other pages -->
+        <footer class="fixed bottom-0 w-1/4 h-12 flex flex-row justify-between items-center pl-2 pr-2 rounded-2xl left-1/2 transform -translate-x-1/2 mb-1.5" transition:persist>
+            <a href="/about" class="">About</a>
+            <a href="/projects" class="">Projects</a>
+            <a href="/contact" class="">Contact</a>
         </footer>
 </html>
 
 <style is:global>
 
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     :root {
         background-color: black;
         color: white;
-        font-family: 'Schibsted Grotesk', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url('../media/images/Wallpaper.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+        /* disable side scrolling */
+        overflow-x: hidden;
     }
 
     /* increase the font sizes depending on how big the screen is but keep it the default size on mobile and 768px */
@@ -51,4 +71,10 @@ const { title,path } = Astro.props;
 			font-size: calc(18px + (24 - 18) * ((100vw - 768px) / (1920 - 768)));
 		}
 	}
+
+    /* have the top bar have a blurred blue background */
+    nav, footer {
+        background-color: rgba(0, 0, 0, 0.378);
+        backdrop-filter: blur(10px);
+    }
 </style>
