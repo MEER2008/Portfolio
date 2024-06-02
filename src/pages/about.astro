@@ -1,13 +1,61 @@
 ---
 import Layout from "../layout/layout.astro";
 
+import Hobby from "../media/images/Hobby.jpg";
+
 ---
 
 <Layout title="About">
     <div class="bg-[#1C2321] w-screen h-[96vh] flex flex-col overflow-y-scroll">
-        <div class="flex flex-row justify-around">
+        <div class="flex flex-row justify-around top-0">
             <h1 class="text-lg text-white text-center pt-2 flex-1">About</h1>
             <a href="/" class="text-white ml-auto mr-2 mt-2"><div class="bg-red-700 w-5 h-5 rounded-full"></div></a>
+        </div>
+        <div class="flex flex-col-reverse sm:flex-row items-center justify-center">
+            <div class="flex flex-col gap-3 h-[80vh] items-center justify-center">
+                <p class="text-white font-bold text-5xl pl-6">Hi, I am Meer</p>
+                <p class="text-white font-medium text-xl pl-6">I am a software developer who loves to <span class="text-green-400">code</span> and build things</p>
+            </div>
+        </div>
+        <div class="flex flex-col-reverse sm:flex-row justify-between h-[80vh] p-10">
+            <div class="flex flex-col gap-3 w-1/2">
+                <p class="text-white font-bold text-5xl">About Me</p>
+                <p class="text-white font-medium text-xl">My name is Meer. I am currently a sophmore in high school. I started coding around the age of 12. Other than coding, I love to mountain bike on trails, photography, play ultimate frisbee, and hangout with friends. </p>
+            </div>
+            <img src={Hobby.src} alt="Hobby" class=" h-96 rounded-lg"/>
+        </div>
+        <div class="flex flex-col-reverse sm:flex-row items-center justify-center">
+            <div class="flex flex-col gap-3 h-[80vh] items-center justify-center">
+                <p class="text-white font-bold text-5xl pl-6">Skills</p>
+                <div class="grid grid-cols-6 gap-5">
+                    <i class="devicon-html5-plain colored text-7xl"></i>
+                    <i class="devicon-css3-plain colored text-7xl"></i>
+                    <i class="devicon-javascript-plain colored text-7xl"></i>
+                    <i class="devicon-typescript-plain colored text-7xl"></i>
+                    <i class="devicon-tailwindcss-original colored text-7xl"></i>
+                    <i class="devicon-svelte-plain colored text-7xl"></i>
+                    <i class="devicon-react-original colored text-7xl"></i>
+                    <i class="devicon-astro-plain colored text-7xl"></i>
+                    <i class="devicon-supabase-plain colored text-7xl"></i>
+                    <i class="devicon-appwrite-plain colored text-7xl"></i>
+                    <i class="devicon-capacitor-plain colored text-7xl"></i>
+                    <i class="devicon-python-plain colored text-7xl"></i>
+                    <i class="devicon-arduino-plain colored text-7xl"></i>
+                    <i class="devicon-bash-plain colored text-7xl"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="text-7xl" />
+                    <i class="devicon-git-plain colored text-7xl"></i>
+                    <i class="devicon-github-original colored text-7xl"></i>
+                    <i class="devicon-linux-plain text-7xl"></i>
+                    <i class="devicon-mysql-original colored text-7xl"></i>
+                    <i class="devicon-vscode-plain colored text-7xl"></i>
+                    <i class="devicon-yarn-original colored text-7xl"></i>
+                    <i class="devicon-npm-original-wordmark colored text-7xl"></i>
+                    <i class="devicon-electron-original colored text-7xl"></i>
+                </div>
+
+                <p class="text-white font-medium text-xl pl-6">Now that you've seen my skills, check out how I put them into action in my projects!</p>
+                <a href="/projects"><button class="bg-green-700 transition-all hover:scale-125 text-white font-bold text-lg p-2 rounded-lg">Projects &RightArrow;</button></a>
+            </div>
         </div>
     </div>
 </Layout>
